@@ -5,8 +5,7 @@ const schema = a.schema({
     .model({
       title: a.string(),
       content: a.string(),
-      commentId: a.id(),
-      comments: a.hasMany('Comment', 'commentId'),
+      comments: a.hasMany('Comment', 'postId'),
     })
     .authorization((allow) => [allow.guest()]),
   Comment: a
