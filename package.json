@@ -6,7 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "generate-graphql": "npx ampx generate graphql-client-code --app-id d1z7lqvkuww27p --branch develop --statement-target angular --out src/app/services"
   },
   "private": true,
   "dependencies": {
